@@ -1,0 +1,7 @@
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+
+  @include red-outline;
+}
