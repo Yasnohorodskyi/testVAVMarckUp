@@ -1,0 +1,42 @@
+.page-header {
+  @include base-width;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 21px;
+}
+
+.main-nav__list {
+  @include margin-padding-zero;
+  display: flex;
+  flex-direction: row;
+
+  margin-left: 40px;
+  list-style: none;
+}
+
+.main-nav__item {
+  padding-right: 50px;
+}
+
+.main-nav__link {
+  font-size: 24px;
+  line-height: 28px;
+  color: inherit;
+  text-decoration: none;
+
+  @include link-hoover;
+}
+
+.first-block__content-image-wrapper {
+  position: relative;
+}
+
+.first-block__content-image {
+  position: absolute;
+}
+
+
+
+

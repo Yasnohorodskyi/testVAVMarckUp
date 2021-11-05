@@ -1,55 +1,465 @@
 <!DOCTYPE html>
 <html class="page" lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title></title>
-  <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/style.min.css">
-</head>
-<body class="page__body">
-  <header class="page-header">
-    <nav class="page-header__nav main-nav">
-      <ul class="main-nav__list">
-        <li class="main-nav__item">
-          <a class="main-nav__link" data-text="Aboutme" href="#about-me">About me</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" data-text="WebDev" href="#webdev">Web Dev</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" data-text="Marketing"href="#marketing">Marketing</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" data-text="Contacts" href="#contacts">Contacts</a>
-        </li>
-      </ul>
-    </nav>
-    <a class="page-header__logo">
-      <img src="#"  width="100px" alt="Yandrew007">
-    </a>
-  </header>
-  <main class="page-main">
-    <h1 class="main-header visually-hidden">Success story is WebDev + Digital Marketing</h1>
-    <section class="about-me" id="about-me">
-      <div class="about-me__container container">
-        <h2 class="about-me__title">Success story is WebDev + Digital Marketing</h2>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body class="page__body">
+    <header class="page-header">
+      <svg class="page-header__logo" width="60" height="60">
+        <use xlink:href="img/sprite_icon.svg#logo"></use>
+      </svg>
+      <nav class="page-header__nav main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Lorem</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Ipsum</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Simply</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Dummy</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="page-main">
+      <section class="first-block">
+        <div class="first-block__wrapper">
+          <div class="first-block__header-wrapper">
+            <h1 class="first-block__header">Lorem Ipsum is simply</h1>
+          </div>
+          <div class="first-block__picture ">
+            <img class="first-block__image" src="img/main-banner.jpg" alt="Main banner">
+          </div>
+          <div class="first-block__content">
+            <div class="first-block__content-description">
+              <h3 class="first-block__content-description-header">Lorem Ipsum is simply dummy text of the printing</h3>
+              <p class="first-block__content-description-paragraph">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+              <div class="first-block__content-description-button button-wrapper">
+                <a class="button" href="#">Lorem Ipsum</a>
+              </div>
+            </div>
+            <ul class="first-block__content-fetures">
+              <li class="first-block__content-fetures-item">
+                <p class="first-block__content-fetures-item-text">It is a long established fact that a reader</p>
+              </li>
+              <li class="first-block__content-fetures-item">
+                <p class="first-block__content-fetures-item-text">The point of using Lorem Ipsum is that</p>
+                </li>
+              <li class="first-block__content-fetures-item">
+                <p class="first-block__content-fetures-item-text">Many desktop publishing packages</p>
+              </li>
+              <li class="first-block__content-fetures-item">
+                <p class="first-block__content-fetures-item-text">There are many variations of passages</p>
+              </li>
+            </ul>
+            <div class="first-block__content-image-wrapper">
+              <img class="first-block__content-image" src="img/first-block-banner.jpg" alt="first block content image">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="second-block">
+        <div class="second-block__features-wrapper">
+          <div class="second-block__title-wrapper">
+            <h2 class="second-block__title">Lorem</h2>
+          </div>
+          <div class="second-block__features">
+            <ul class="second-block__features-list">
+              <li class="second-block__features-item">
+                <div class="second-block__feature-header-wrapper">
+                  <h4 class="second-block__feature-header">Lorem Ipsum</h4>
+                </div>
+                <ul class="second-block__feature-list">
+                  <li class="second-block__feature-item">It is a long established fact that a reader will be distracted</li>
+                  <li class="second-block__feature-item">The readable content</li>
+                  <li class="second-block__feature-item">There are many variations of passages</li>
+                </ul>
+              </li>
+              <li class="second-block__features-item">
+                <div class="second-block__feature-header-wrapper">
+                  <h4 class="second-block__feature-header">Lorem Ipsum</h4>
+                </div>
+                <ul class="second-block__feature-list">
+                  <li class="second-block__feature-item">It is a long established fact that a reader will be distracted</li>
+                  <li class="second-block__feature-item">The readable content</li>
+                  <li class="second-block__feature-item">There are many variations of passages</li>
+                </ul>
+              </li>
+              <li class="second-block__features-item">
+                <div class="second-block__feature-header-wrapper">
+                  <h4 class="second-block__feature-header">Lorem Ipsum</h4>
+                </div>
+                <ul class="second-block__feature-list">
+                  <li class="second-block__feature-item">It is a long established fact that a reader will be distracted</li>
+                  <li class="second-block__feature-item">The readable content</li>
+                  <li class="second-block__feature-item">There are many variations of passages</li>
+                </ul>
+              </li>
+            </ul>
+            <div class="second-block__features-dots">
+              <span class="second-block__feature-dots second-block__feature-dots--active"></span>
+              <span class="second-block__feature-dots"></span>
+              <span class="second-block__feature-dots"></span>
+            </div>
+            <button class="second-block__features-arrows previous-arrow" type="button">
+              <svg class="reviews__arrow-icon" width="30" height="24">
+                <use xlink:href="img/sprite_icon.svg#arrow-before"></use>
+              </svg>
+              <span class="visually-hidden">Previous features List</span>
+            </button>
+            <button class="second-block__features-arrows next-arrow" type="button">
+              <svg class="reviews__arrow-icon" width="32" height="24">
+                <use xlink:href="img/sprite_icon.svg#arrow-next"></use>
+              </svg>
+              <span class="visually-hidden">Next features List</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="second-block__advantage advantages">
+          <div class="advantages__title-wrapper">
+            <h3 class="advantages__title">Lorem Ipsum is simply</h3>
+            <span class="advantages__title-line"></span>
+          </div>
+          <ul class="advantages__list">
+            <li class="advantages__item advantage">
+              <span class="advantage__number">01</span>
+              <p class="advantage__content">Contrary to popular belief, Lorem Ipsum</p>
+            </li>
+            <li class="advantages__item advantage">
+              <span class="advantage__number">02</span>
+              <p class="advantage__content">Random text it has roots in a piece of classical</p>
+            </li>
+            <li class="advantages__item advantage">
+              <span class="advantage__number">03</span>
+              <p class="advantage__content">Latin literature from 45 BC, making it over 2000 years old</p>
+            </li>
+            <li class="advantages__item advantage">
+              <span class="advantage__number">04</span>
+              <p class="advantage__content">Latin literature from 45 BC, making it over 2000 years old</p>
+            </li>
+            <li class="advantages__item advantage">
+              <span class="advantage__number">05</span>
+              <p class="advantage__content">If you are going to use a passage of Lorem Ipsum</p>
+            </li>
+            <li class="advantages__item advantage">
+              <span class="advantage__number">06</span>
+              <p class="advantage__content">There are many variations of passages of Lorem Ipsum</p>
+            </li>
+          </ul>
+        </div>
+        <div class="second-block__inner-wrapper">
+          <div class="second-block__image-wrapper">
+            <img class="second-block__image" src="img/second-block-image.jpg" alt="second block content image" width="945" height="500">
+          </div>
+          <div class="second-block__arguments">
+            <h3 class="second-block__arguments-title">There are many variations of passages</h3>
+            <p class="second-block__arguments-description">of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
+            <ul class="second-block__arguments-list">
+              <li class="second-block__arguments-item">Lorem Ipsum</li>
+              <li class="second-block__arguments-item">Lorem Ipsum</li>
+              <li class="second-block__arguments-item">Lorem Ipsum</li>
+              <li class="second-block__arguments-item">Lorem Ipsum</li>
+              <li class="second-block__arguments-item">Lorem Ipsum</li>
+              <li class="second-block__arguments-item">Lorem Ipsum</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="third-block">
+        <div class="third-block__title_wrapper">
+          <h2 class="third-block__title">Lorem Ipsum</h2>
+          <span class="third-block__title-line"></span>
+        </div>
+        <ul class="third-block__list">
+          <li class="third-block__item">
+            <svg class="third-block__item-icon third-block__item-icon--active" width="50" height="50">
+              <use xlink:href="img/sprite_icon.svg#id-card"></use>
+            </svg>
+            <span class="third-block__item-line third-block__item-line--active"></span>
+            <p class="third-block__item-content">Lorem Ipsum is simply dummy</p>
+          </li>
+          <li class="third-block__item">
+            <svg class="third-block__item-icon" width="50" height="50">
+              <use xlink:href="img/sprite_icon.svg#smartphone"></use>
+            </svg>
+            <span class="third-block__item-line"></span>
+            <p class="third-block__item-content">Lorem Ipsum is simply dummy</p>
+          </li>
+          <li class="third-block__item">
+            <svg class="third-block__item-icon" width="50" height="50">
+              <use xlink:href="img/sprite_icon.svg#laptop"></use>
+            </svg>
+            <span class="third-block__item-line"></span>
+            <p class="third-block__item-content">Lorem Ipsum is simply dummy</p>
+          </li>
+          <li class="third-block__item">
+            <svg class="third-block__item-icon" width="50" height="50">
+              <use xlink:href="img/sprite_icon.svg#chat"></use>
+            </svg>
+            <span class="third-block__item-line"></span>
+            <p class="third-block__item-content">Lorem Ipsum is simply dummy</p>
+          </li>
+          <li class="third-block__item third-block__item-last">
+            <svg class="third-block__item-icon" width="50" height="50">
+              <use xlink:href="img/sprite_icon.svg#line-chart"></use>
+            </svg>
+            <span class="third-block__item-line"></span>
+            <p class="third-block__item-content">Lorem Ipsum is simply dummy</p>
+          </li>
+        </ul>
+        <div class="third-block__button-wrapper">
+          <span class="third-block__button-line"></span>
+          <div class="third-block__button button-wrapper">
+            <a class="button" href="#">Lorem Ipsum</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="fourth-block">
+        <div class="fourth-block_wrapper">
+          <h2 class="fourth-block__title visually-hidden">Lorem</h2>
+          <ul class="fourth-block__list persons">
+            <li class="persons__item">
+              <div class="persons__item-image-wrapper">
+                <img class="persons__item-image-nimb" src="img/Ellipse.png" alt="">
+                <span class="persons__item-first-image"></span>
+              </div>
+              <h3 class="persons__item-title">Lorem Ipsum is simply dummy text</h3>
+              <p class="persons__item-desription">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+              <ul class="persons__item-list">
+                <li class="persons__item-point">Lorem Ipsum has been the industry's</li>
+                <li class="persons__item-point">Standard dummy text ever since</li>
+                <li class="persons__item-point">But also the leap into electronic typesetting</li>
+              </ul>
+            </li>
+            <li class="persons__item">
+              <div class="persons__item-image-wrapper">
+                <span class="persons__item-image"></span>
+              </div>
+              <h3 class="persons__item-title">Lorem Ipsum is simply dummy text</h3>
+              <p class="persons__item-desription">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+              <ul class="persons__item-list">
+                <li class="persons__item-point">Lorem Ipsum has been the industry's</li>
+                <li class="persons__item-point">Standard dummy text ever since</li>
+                <li class="persons__item-point">But also the leap into electronic typesetting</li>
+                <li class="persons__item-point">It was popularised in the 1960s</li>
+              </ul>
+            </li>
+            <li class="persons__item">
+              <div class="persons__item-image-wrapper">
+                <span class="persons__item-image"></span>
+              </div>
+              <h3 class="persons__item-title">Lorem Ipsum is simply dummy text</h3>
+              <p class="persons__item-desription">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+              <ul class="persons__item-list">
+                <li class="persons__item-point">Lorem Ipsum has been the industry's standard dummy text ever since</li>
+                <li class="persons__item-point">But also the leap into electronic typesetting</li>
+              </ul>
+            </li>
+            <li class="persons__item">
+              <div class="persons__item-image-wrapper">
+                <span class="persons__item-image"></span>
+              </div>
+              <h3 class="persons__item-title">Lorem Ipsum simply</h3>
+              <p class="persons__item-desription">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+              <ul class="persons__item-list">
+                <li class="persons__item-point">Lorem Ipsum has been the industry's</li>
+                <li class="persons__item-point">Standard dummy text ever since</li>
+                <li class="persons__item-point">But also the leap into electronic typesetting</li>
+              </ul>
+            </li>
+            <li class="persons__item">
+              <div class="persons__item-image-wrapper">
+                <span class="persons__item-image"></span>
+              </div>
+              <h3 class="persons__item-title">Lorem Ipsum simply</h3>
+              <p class="persons__item-desription">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+              <ul class="persons__item-list">
+                <li class="persons__item-point">Lorem Ipsum has been the industry's</li>
+                <li class="persons__item-point">Standard dummy text ever since</li>
+                <li class="persons__item-point">But also the leap into electronic typesetting</li>
+              </ul>
+            </li>
+          </ul>
+          <div class="fourth-block__additional-wrapper">
+            <ul class="fourth-block__additional-list">
+              <li class="fourth-block__additional-item">Lorem Ipsum is simply</li>
+              <li class="fourth-block__additional-item">Lorem Ipsum is simply</li>
+              <li class="fourth-block__additional-item">Lorem Ipsum is simply</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="fifth-block">
+        <h2 class="fifth-block__title">Lorem Ipsum is simply dummy text</h2>
+        <div class="fifth-block__inner-wrapper">
+          <div class="fifth-block__form-wrapper">
+            <h3 class="fifth-block__form-header">It is a long established fact that a reader</h3>
+            <form class="fifth-block__form form" action="/form-sending" method="post">
+              <div class="form__name-wrapper">
+                <input class="form__field" type="text" name="name" id="name" placeholder=" " minlength="2" maxlength="25" required>
+                <label class="form__field-label" for="name">Name <span class="form__field-sign">*</span></label>
+              </div>
+              <div class="form__contact-wrapper">
+                <div class="form__tel-wrapper">
+                  <input class="form__field" type="tel" name="phone" id="tel" placeholder=" " pattern="^[0-9]+$" required>
+                  <label class="form__field-label" for="tel">Phone <span class="form__field-sign">*</span></label>
+                </div>
+                <div class="form__email-wrapper">
+                  <input class="form__field" type="email" name="email" id="email" placeholder=" " required>
+                  <label class="form__field-label" for="email">Email <span class="form__field-sign">*</span></label>
+                </div>
+              </div>
+              <small class="form__tagline"><span class="fifth-block__form-tagline-arrow">* </span>Lorem Ipsum is simply dummy</small>
+              <div class="form__calculator-wrapper">
+                <div class="form__calculator-value-wrapper">
+                  <span class="form__calculator-value">3000 грн</span>
+                </div>
+                <div class="form__range-slader-wrapper">
+                  <input class="form__range-slader" type="range" name="calculator" min="0" max="7000" required>
+                  <div class="form__range-scale-wrapper">
+                    <div class="form__range-scale form__range-scale--1">
+                      <span class="form__range-scale-point"></span>
+                      <span class="form__range-scale-number">500 грн</span>
+                    </div>
+                    <div class="form__range-scale form__range-scale--2">
+                      <span class="form__range-scale-point"></span>
+                      <span class="form__range-scale-number">1500 грн</span>
+                    </div>
+                    <div class="form__range-scale form__range-scale--3">
+                      <span class="form__range-scale-point"></span>
+                      <span class="form__range-scale-number">2500 грн</span>
+                    </div>
+                    <div class="form__range-scale form__range-scale--4">
+                      <span class="form__range-scale-point"></span>
+                      <span class="form__range-scale-number">3500 грн</span>
+                    </div>
+                    <div class="form__range-scale form__range-scale--5">
+                      <span class="form__range-scale-point"></span>
+                      <span class="form__range-scale-number">4500 грн</span>
+                    </div>
+                    <div class="form__range-scale form__range-scale--6">
+                      <span class="form__range-scale-point"></span>
+                      <span class="form__range-scale-number">5500 грн</span>
+                    </div>
+                    <div class="form__range-scale form__range-scale--7">
+                      <span class="form__range-scale-point"></span>
+                      <span class="form__range-scale-number">6500 грн</span>
+                    </div>
+                </div>
+                </div>
+              </div>
+              <div class="form__checkbox-batton-wrapper">
+                <div>
+                  <input class="form__ckeckbox visually-hidden" type="checkbox" id="checkbox-agree" name="lorem-ipsum" value="Lorem Ipsum is simply dummy text" checked>
+                  <label class="form__ckeckbox-label" for="checkbox-agree">Lorem Ipsum is simply dummy text</label>
+                </div>
+                <button class="form__ckeckbox-button button" type="submit">Lorem Ipsum</button>
+              </div>
+            </form>
+          </div>
+          <div class="fifth-block__description-wrapper">
+            <h3 class="fifth-block__description-title">It is a long established fact that a reader</h3>
+            <a class="fifth-block__description-email-link" href="mailto:support@email.com">support@email.com</a>
+            <p class="fifth-block__description-content">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer-container">
+        <div class="page-footer__social-wrapper">
+          <ul class="page-footer__social-list social">
+            <li class="social-item">
+              <a class="social-item__link" href="#">
+                <span class="visually-hidden">We are in Facebook</span>
+                <svg class="social-item___image" width="30" height="30">
+                  <use xlink:href="img/sprite_icon.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item">
+              <a class="social-item__link" href="#">
+                <span class="visually-hidden">We are in Instagram</span>
+                <svg class="social-item___image" width="30" height="30">
+                  <use xlink:href="img/sprite_icon.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item">
+              <a class="social-item__link" href="#">
+                <span class="visually-hidden">We are in Youtube</span>
+                <svg class="social-item___image" width="30" height="30">
+                  <use xlink:href="img/sprite_icon.svg#youtube"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social-item__link" href="#">
+                <span class="visually-hidden">We are in Twitter</span>
+                <svg class="social-item___image" width="30" height="30">
+                  <use xlink:href="img/sprite_icon.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <a class="copyright__link" href="#">© 2020 Vis-A-Vis</a>
+        </div>
+        <ul class="page-footer__link-list">
+          <li class="page-footer__link-item">
+            <a class="page-footer__link" href="">Lorem</a>
+          </li>
+          <li class="page-footer__link-item">
+            <a class="page-footer__link" href="">Ipsum</a>
+          </li>
+          <li class="page-footer__link-item">
+            <a class="page-footer__link" href="">Demmy</a>
+          </li>
+          <li class="page-footer__link-item">
+            <a class="page-footer__link" href="">Text</a>
+          </li>
+        </ul>
+        <ul class="page-footer__link-list">
+          <li class="page-footer__link-item">
+            <a class="page-footer__link" href="">Lorem</a>
+          </li>
+          <li class="page-footer__link-item">
+            <a class="page-footer__link" href="">Ipsum</a>
+          </li>
+          <li class="page-footer__link-item">
+            <a class="page-footer__link" href="">Demmy</a>
+          </li>
+          <li class="page-footer__link-item">
+            <a class="page-footer__link" href="">Text</a>
+          </li>
+        </ul>
+        <ul class="page-footer__link-list">
+          <li class="page-footer__link-item">
+            <a class="page-footer__link" href="">Lorem</a>
+          </li>
+          <li class="page-footer__link-item">
+            <a class="page-footer__link" href="">Ipsum</a>
+          </li>
+          <li class="page-footer__link-item">
+            <a class="page-footer__link" href="">Demmy</a>
+          </li>
+          <li class="page-footer__link-item">
+            <a class="page-footer__link" href="">Text</a>
+          </li>
+        </ul>
+
       </div>
-    </section>
-    <section class="my-features">
-      <h2 class="my-features__title container">Our main principals in web</h2>
-
-    </section>
-    <section class="my-stack">
-      <h2 class="my-stack__title visually-hidden">My stack</h2>
-    </section>
-
-
-  </main>
-  <footer class="page-footer">
-  </footer>
-  <script src="#"></script>
-
-</body>
+    </footer>
+    <script src="#"></script>
+   </body>
 </html>

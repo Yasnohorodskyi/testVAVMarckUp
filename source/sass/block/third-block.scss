@@ -1,0 +1,120 @@
+.third-block {
+  @include base-width;
+  box-sizing: border-box;
+  padding-right: 130px;
+  margin-bottom: 180px;
+  display: flex;
+  flex-direction: column;
+}
+
+.third-block__title_wrapper {
+  @include line-wrapper;
+}
+
+.third-block__title {
+  @include section-title;
+  line-height: 1.2em;
+  margin-right: 9px;
+}
+
+.third-block__title-line {
+  @include grey-line;
+}
+
+.third-block__list {
+  @include margin-padding-zero;
+  display: flex;
+  flex-direction: row;
+  padding-left: 130px;
+  list-style: none;
+  column-gap: 10px;
+}
+
+.third-block__item {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+}
+
+.third-block__item-icon {
+  fill: $font-main;
+  margin-bottom: 41px;
+}
+
+.third-block__item-icon--active {
+  fill: $blue;
+}
+
+.third-block__item-line {
+  position:relative;
+  display: flex;
+  align-items:center;
+  width: 100%;
+  border: 1px solid $calculator-scale;
+  margin-bottom: 49px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -1px;
+    display: block;
+    box-sizing: border-box;
+    width: 10px;
+    height: 10px;
+    border: 2px solid $calculator-scale;
+    background-color: $white;
+    border-radius: 50%
+  }
+}
+
+.third-block__item-line--active {
+  border: 1px solid $blue;
+
+  &::before {
+    width: 20px;
+    height: 20px;
+    border: 2px solid $blue;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 4px;
+    display: block;
+    box-sizing: border-box;
+    width: 10px;
+    height: 10px;
+    border: 2px solid $blue;
+    background-color: $blue;
+    border-radius: 50%
+  }
+}
+
+.third-block__item:last-child .third-block__item-line {
+  border: none;
+}
+
+.third-block__item-content {
+  @include margin-padding-zero;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1em;
+  margin-bottom: 118px;
+}
+
+.third-block__button-wrapper {
+  @include line-wrapper;
+  margin-left: 130px;
+}
+
+.third-block__button {
+display: flex;
+align-items:center;
+justify-content: center;
+width: 230px;
+margin-left: 30px;
+}
+
+.third-block__button-line {
+  @include grey-line;
+}
