@@ -1,0 +1,31 @@
+.button-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $blue;
+  border-radius: 10px;
+  height: 50px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    transition: 400ms all;
+    box-shadow: 6px 6px 10px 2px rgba(0, 147, 230, 0.32);
+    transform: scale(1.2);
+  }
+
+  &:active {
+    transition: 400ms all;
+    box-shadow: none;
+    transform: scale(1);
+  }
+
+}
+
+.button {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1em;
+  color: $white;
+
+}
