@@ -1,0 +1,156 @@
+.second-block__features-wrapper {
+  position: absolute;
+  top: -240px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 76px;
+}
+
+.second-block__title-wrapper {
+  display: flex;
+  margin-top: 70px;
+  width: 170px;
+}
+
+.second-block__title {
+  @include section-title;
+  line-height: 1.1em;
+}
+
+.second-block__features {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 1360px;
+  z-index: 1;
+}
+
+.second-block__features-list {
+  @include margin-padding-zero;
+  display: flex;
+  box-sizing: border-box;
+  width: 1160px !important;
+  height: 520px !important;
+  margin-right: 130px;
+  margin-left: 90px;
+  margin-bottom: 50px;
+  border-radius:20px;
+}
+
+.glider {
+  overflow-x: hidden !important;
+}
+
+.glider-track {
+  height: 500px;
+  column-gap: 30px;
+  align-items: center;
+}
+
+.second-block__features-item {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 0 40px;
+  box-shadow: 0px 20px 20px $element-shadow;
+  border-radius: 20px;
+  background-color: $white;
+  width: 360px !important;
+  height: 460px !important;
+}
+
+.second-block__feature-header-wrapper {
+  position: relative;
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  width: 202px;
+  height: 70px;
+  padding-left: 90px;
+  margin-top: 73px;
+  margin-bottom: 63px;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    display: block;
+    width: 70px;
+    height: 70px;
+    border-radius:50%;
+    background-color: $icon-grey;
+  }
+}
+
+.second-block__feature-header {
+  @include margin-padding-zero;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 0.9em;
+
+}
+
+.second-block__feature-list {
+  @include margin-padding-zero;
+  padding-bottom: 50px;
+
+}
+
+.second-block__feature-item{
+  position: relative;
+  display: flex;
+  box-sizing: border-box;
+  align-items: flex-start;
+  width: 100%;
+  padding-left: 40px;
+  margin-bottom: 35px;
+
+  &::before {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius:50%;
+    background-color: $blue;
+  }
+}
+
+.dots.glider-dots {
+  width: 116px;
+  justify-content: space-between;
+}
+
+.glider-dot {
+  width: 14px;
+  height: 14px;
+  background-color: $icon-grey !important;
+}
+
+ .glider-dot.active {
+   background-color: $font-main !important;
+}
+
+.second-block__features-arrows {
+  position: absolute;
+  @include margin-padding-zero;
+  top: 210px;
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-color: $white;
+  box-shadow: 0px 10px 30px $element-shadow;
+  border-radius: 10px;
+  border: 0;
+}
+
+.previous-arrow {
+  left: 0;
+}
+
+.next-arrow {
+  right: 40px;
+}
