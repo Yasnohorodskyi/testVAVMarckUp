@@ -3,27 +3,27 @@ const FourthBlock = {
     return {
       personsData: [
         {
-          "title": "Lorem Ipsum is simply dummy text1",
+          "title": "Lorem Ipsum is simply dummy text",
           "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
           "arguments":["Lorem Ipsum has been the industry's", "Standard dummy text ever since", "But also the leap into electronic typesetting"]
         },
         {
-          "title": "Lorem Ipsum is simply dummy text2",
+          "title": "Lorem Ipsum is simply dummy text",
           "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
           "arguments":["Lorem Ipsum has been the industry's", "Standard dummy text ever since", "But also the leap into electronic typesetting", "It was popularised in the 1960s"]
         },
         {
-          "title": "Lorem Ipsum is simply dummy text3",
+          "title": "Lorem Ipsum is simply dummy text",
           "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
           "arguments":["Lorem Ipsum has been the industry's", "But also the leap into electronic typesetting"]
         },
         {
-          "title": "Lorem Ipsum simply4",
+          "title": "Lorem Ipsum simply",
           "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
           "arguments":["Lorem Ipsum has been the industry's", "Standard dummy text ever since", "But also the leap into electronic typesetting"]
         },
         {
-          "title": "Lorem Ipsum simply5",
+          "title": "Lorem Ipsum simply",
           "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
           "arguments":["Lorem Ipsum has been the industry's", "Standard dummy text ever since", "But also the leap into electronic typesetting"]
         }
