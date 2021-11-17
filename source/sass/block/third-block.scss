@@ -42,20 +42,23 @@
 }
 
 .third-block__item-icon--active {
-  fill: $blue;
+  fill: $blue
 }
+
 
 .third-block__item-line {
   position:relative;
   display: flex;
   align-items:center;
   width: 100%;
-  border: 1px solid $calculator-scale;
+  height: 2px;
+  background-color: $calculator-scale;
   margin-bottom: 49px;
 
   &::before {
     content: "";
     position: absolute;
+    z-index: 3;
     left: -1px;
     display: block;
     box-sizing: border-box;
@@ -67,13 +70,14 @@
   }
 }
 
-.third-block__item-line--active {
-  border: 1px solid $blue;
+.third-block__item-line--first {
 
   &::before {
     width: 20px;
     height: 20px;
     border: 2px solid $blue;
+    background-color: $white;
+    z-index: 2;
   }
 
   &::after {
@@ -86,12 +90,34 @@
     height: 10px;
     border: 2px solid $blue;
     background-color: $blue;
-    border-radius: 50%
+    border-radius: 50%;
+    z-index: 3;
   }
 }
 
 .third-block__item:last-child .third-block__item-line {
-  border: none;
+  background-color: $white;
+}
+
+// анимация линий
+
+.third-block__list li {
+  @for $var from 1 to 5 {
+    $delay: ($var - 1) * 2 + 0.1;
+    &:nth-child(#{$var}) .third-block__item-line-progress--active{
+      position: absolute;
+      z-index: 1;
+      height: 100%;
+      width: 0%;
+      background-color: $blue;
+      animation: fill-bar 1.9s #{$delay + s} linear forwards;
+    }
+  }
+}
+
+@keyframes fill-bar {
+  from {width: 0%;}
+  to {width: 100%;}
 }
 
 .third-block__item-content {
