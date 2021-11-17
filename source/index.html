@@ -14,6 +14,7 @@
     <link rel="preload" href="fonts/Vodafone Rg Regular.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
     <link rel="stylesheet" href="css/style.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.2.22/vue.global.min.js"></script>
 />
   </head>
   <body class="page__body">
@@ -313,157 +314,196 @@
           </div>
         </div>
       </section>
-
+          <!-- vue test component -->
+    <div id="fourth-block">
       <section class="fourth-block">
         <div class="fourth-block_wrapper">
           <h2 class="fourth-block__title visually-hidden">Lorem</h2>
           <ul class="fourth-block__list persons">
-            <li class="persons__item">
-              <div class="persons__item-image-wrapper">
-                <img class="persons__item-image-nimb" src="img/Ellipse.png" alt="">
+            <li
+              v-for="(person, idx) in personsDataSchuffled"
+              :key="idx"
+              class="persons__item"
+            >
+              <div v-if="idx === 0" class="persons__item-image-wrapper">
+                <img
+                  class="persons__item-image-nimb"
+                  src="img/Ellipse.png"
+                  alt=""
+                />
                 <span class="persons__item-first-image"></span>
               </div>
-              <h3 class="persons__item-title">Lorem Ipsum is simply dummy text</h3>
-              <p class="persons__item-desription">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-              <ul class="persons__item-list">
-                <li class="persons__item-point">Lorem Ipsum has been the industry's</li>
-                <li class="persons__item-point">Standard dummy text ever since</li>
-                <li class="persons__item-point">But also the leap into electronic typesetting</li>
-              </ul>
-            </li>
-            <li class="persons__item">
-              <div class="persons__item-image-wrapper">
+              <div v-else class="persons__item-image-wrapper">
                 <span class="persons__item-image"></span>
               </div>
-              <h3 class="persons__item-title">Lorem Ipsum is simply dummy text</h3>
-              <p class="persons__item-desription">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+
+              <h3 class="persons__item-title">{{ person.title }}</h3>
+              <p class="persons__item-desription">
+                {{ person.description }}
+              </p>
               <ul class="persons__item-list">
-                <li class="persons__item-point">Lorem Ipsum has been the industry's</li>
-                <li class="persons__item-point">Standard dummy text ever since</li>
-                <li class="persons__item-point">But also the leap into electronic typesetting</li>
-                <li class="persons__item-point">It was popularised in the 1960s</li>
-              </ul>
-            </li>
-            <li class="persons__item">
-              <div class="persons__item-image-wrapper">
-                <span class="persons__item-image"></span>
-              </div>
-              <h3 class="persons__item-title">Lorem Ipsum is simply dummy text</h3>
-              <p class="persons__item-desription">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-              <ul class="persons__item-list">
-                <li class="persons__item-point">Lorem Ipsum has been the industry's standard dummy text ever since</li>
-                <li class="persons__item-point">But also the leap into electronic typesetting</li>
-              </ul>
-            </li>
-            <li class="persons__item">
-              <div class="persons__item-image-wrapper">
-                <span class="persons__item-image"></span>
-              </div>
-              <h3 class="persons__item-title">Lorem Ipsum simply</h3>
-              <p class="persons__item-desription">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-              <ul class="persons__item-list">
-                <li class="persons__item-point">Lorem Ipsum has been the industry's</li>
-                <li class="persons__item-point">Standard dummy text ever since</li>
-                <li class="persons__item-point">But also the leap into electronic typesetting</li>
-              </ul>
-            </li>
-            <li class="persons__item">
-              <div class="persons__item-image-wrapper">
-                <span class="persons__item-image"></span>
-              </div>
-              <h3 class="persons__item-title">Lorem Ipsum simply</h3>
-              <p class="persons__item-desription">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-              <ul class="persons__item-list">
-                <li class="persons__item-point">Lorem Ipsum has been the industry's</li>
-                <li class="persons__item-point">Standard dummy text ever since</li>
-                <li class="persons__item-point">But also the leap into electronic typesetting</li>
+                <li
+                  v-for="(argument, index) in person.arguments"
+                  :key="index"
+                  class="persons__item-point"
+                >
+                  {{ argument }}
+                </li>
               </ul>
             </li>
           </ul>
           <div class="fourth-block__additional-wrapper">
             <ul class="fourth-block__additional-list">
-              <li class="fourth-block__additional-item">Lorem Ipsum is simply</li>
-              <li class="fourth-block__additional-item">Lorem Ipsum is simply</li>
-              <li class="fourth-block__additional-item">Lorem Ipsum is simply</li>
+              <li
+                v-for="(additionalItem, idx) in 3"
+                :key="idx"
+                class="fourth-block__additional-item"
+              >
+                Lorem Ipsum is simply
+              </li>
             </ul>
           </div>
         </div>
       </section>
-      <section class="fifth-block">
-        <h2 class="fifth-block__title">Lorem Ipsum is simply dummy text</h2>
-        <div class="fifth-block__inner-wrapper">
-          <div class="fifth-block__form-wrapper">
-            <h3 class="fifth-block__form-header">It is a long established fact that a reader</h3>
-            <form class="fifth-block__form form" action="/form-sending" method="post">
-              <div class="form__name-wrapper">
-                <input class="form__field" type="text" name="name" id="name" placeholder=" " minlength="2" maxlength="25" required>
-                <label class="form__field-label" for="name">Name <span class="form__field-sign">*</span></label>
+    </div>
+    <section class="fifth-block">
+      <h2 class="fifth-block__title">Lorem Ipsum is simply dummy text</h2>
+      <div class="fifth-block__inner-wrapper">
+        <div class="fifth-block__form-wrapper">
+          <h3 class="fifth-block__form-header">It is a long established fact that a reader</h3>
+          <div id="form">
+            <form
+            class="fifth-block__form form"
+            method="post"
+            action="/form-sending"
+            autocomplete="off"
+            @submit.prevent="formSubmit"
+          >
+            <div class="form__name-wrapper">
+              <input
+                class="form__field"
+                type="text"
+                name="name"
+                id="name"
+                placeholder=" "
+                minlength="5"
+                maxlength="120"
+                v-model.trim="form.name"
+                required
+              />
+              <label class="form__field-label" for="name"
+                >Name <span class="form__field-sign">*</span></label
+              >
+              <small v-if="!nameIsValid && actionStatusActive" class="form__tagline"
+                ><span class="fifth-block__form-tagline-arrow">* </span>Lorem Ipsum is
+                simply dummy</small
+              >
+            </div>
+
+            <div class="form__contact-wrapper">
+              <div class="form__tel-wrapper">
+                <input
+                  class="form__field"
+                  type="tel"
+                  name="phone"
+                  id="tel"
+                  placeholder=" "
+                  pattern="^[0-9]+$"
+                  v-model.number="form.phone"
+                  required
+                />
+                <label class="form__field-label" for="tel"
+                  >Phone <span class="form__field-sign">*</span></label
+                >
+                <small v-if="!phoneIsValid && actionStatusActive" class="form__tagline"
+                  ><span class="fifth-block__form-tagline-arrow">* </span>Lorem Ipsum is
+                  simply dummy</small
+                >
               </div>
-              <div class="form__contact-wrapper">
-                <div class="form__tel-wrapper">
-                  <input class="form__field" type="tel" name="phone" id="tel" placeholder=" " pattern="^[0-9]+$" required>
-                  <label class="form__field-label" for="tel">Phone <span class="form__field-sign">*</span></label>
-                </div>
-                <div class="form__email-wrapper">
-                  <input class="form__field" type="email" name="email" id="email" placeholder=" " required>
-                  <label class="form__field-label" for="email">Email <span class="form__field-sign">*</span></label>
+              <div class="form__email-wrapper">
+                <input
+                  class="form__field"
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder=" "
+                  v-model.trim="form.email"
+                  required
+                />
+                <label class="form__field-label" for="email"
+                  >Email <span class="form__field-sign">*</span></label
+                >
+                <small v-if="!emailIsValid && actionStatusActive" class="form__tagline"
+                  ><span class="fifth-block__form-tagline-arrow">* </span>Lorem Ipsum is
+                  simply dummy</small
+                >
+              </div>
+            </div>
+
+            <div class="form__calculator-wrapper">
+              <div class="form__calculator-value-wrapper">
+                <span :style="rangeValueMove" class="form__calculator-value"
+                  >{{ form.currentRange }} грн
+                </span>
+              </div>
+              <div class="form__range-slader-wrapper">
+                <input
+                  @input="form.currentRange = $event.target.value"
+                  class="form__range-slader"
+                  type="range"
+                  name="calculator"
+                  :min="minRange"
+                  :max="maxRange"
+                  v-model="form.currentRange"
+                  required
+                />
+                <div class="form__range-scale-wrapper">
+                  <div v-for="(range, idx) in 7" :key="idx" class="form__range-scale">
+                    <span class="form__range-scale-point"></span>
+                    <span class="form__range-scale-number">{{
+                      idx * rangeSection + startRange
+                    }}</span>
+                  </div>
                 </div>
               </div>
-              <small class="form__tagline"><span class="fifth-block__form-tagline-arrow">* </span>Lorem Ipsum is simply dummy</small>
-              <div class="form__calculator-wrapper">
-                <div class="form__calculator-value-wrapper">
-                  <span class="form__calculator-value">3000 грн</span>
-                </div>
-                <div class="form__range-slader-wrapper">
-                  <input class="form__range-slader" type="range" name="calculator" min="0" max="7000" required>
-                  <div class="form__range-scale-wrapper">
-                    <div class="form__range-scale form__range-scale--1">
-                      <span class="form__range-scale-point"></span>
-                      <span class="form__range-scale-number">500 грн</span>
-                    </div>
-                    <div class="form__range-scale form__range-scale--2">
-                      <span class="form__range-scale-point"></span>
-                      <span class="form__range-scale-number">1500 грн</span>
-                    </div>
-                    <div class="form__range-scale form__range-scale--3">
-                      <span class="form__range-scale-point"></span>
-                      <span class="form__range-scale-number">2500 грн</span>
-                    </div>
-                    <div class="form__range-scale form__range-scale--4">
-                      <span class="form__range-scale-point"></span>
-                      <span class="form__range-scale-number">3500 грн</span>
-                    </div>
-                    <div class="form__range-scale form__range-scale--5">
-                      <span class="form__range-scale-point"></span>
-                      <span class="form__range-scale-number">4500 грн</span>
-                    </div>
-                    <div class="form__range-scale form__range-scale--6">
-                      <span class="form__range-scale-point"></span>
-                      <span class="form__range-scale-number">5500 грн</span>
-                    </div>
-                    <div class="form__range-scale form__range-scale--7">
-                      <span class="form__range-scale-point"></span>
-                      <span class="form__range-scale-number">6500 грн</span>
-                    </div>
-                </div>
-                </div>
+            </div>
+            <div class="form__checkbox-batton-wrapper">
+              <div>
+                <input
+                  class="form__ckeckbox visually-hidden"
+                  type="checkbox"
+                  id="checkbox-agree"
+                  name="lorem-ipsum"
+                  value="Lorem Ipsum is simply dummy text"
+                  v-model="form.agree"
+                  required
+                />
+                <label class="form__ckeckbox-label" for="checkbox-agree"
+                  >Lorem Ipsum is simply dummy text</label
+                >
+                <small v-if="!agreeIsValid && actionStatusActive" class="form__tagline"
+                  ><span class="fifth-block__form-tagline-arrow">* </span>Lorem Ipsum is
+                  simply dummy</small
+                >
               </div>
-              <div class="form__checkbox-batton-wrapper">
-                <div>
-                  <input class="form__ckeckbox visually-hidden" type="checkbox" id="checkbox-agree" name="lorem-ipsum" value="Lorem Ipsum is simply dummy text" checked>
-                  <label class="form__ckeckbox-label" for="checkbox-agree">Lorem Ipsum is simply dummy text</label>
-                </div>
-                <button class="form__ckeckbox-button button" type="submit">Lorem Ipsum</button>
-              </div>
-            </form>
-          </div>
-          <div class="fifth-block__description-wrapper">
-            <h3 class="fifth-block__description-title">It is a long established fact that a reader</h3>
-            <a class="fifth-block__description-email-link" href="mailto:support@email.com">support@email.com</a>
-            <p class="fifth-block__description-content">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.</p>
+              <button
+                @click="handlerSubmitOn()"
+                class="form__ckeckbox-button button"
+                type="submit"
+              >
+                Lorem Ipsum
+              </button>
+            </div>
+          </form>
           </div>
         </div>
-      </section>
+        <div class="fifth-block__description-wrapper">
+          <h3 class="fifth-block__description-title">It is a long established fact that a reader</h3>
+          <a class="fifth-block__description-email-link" href="mailto:support@email.com">support@email.com</a>
+          <p class="fifth-block__description-content">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.</p>
+        </div>
+      </div>
+    </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer-container">
@@ -546,11 +586,12 @@
             <a class="page-footer__link" href="">Text</a>
           </li>
         </ul>
-
       </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
     <script src="js/slider.js"></script>
     <script src="js/scroll.js"></script>
+    <script src="js/fourth-block.js"></script>
+    <script src="js/form.js"></script>
    </body>
 </html>
